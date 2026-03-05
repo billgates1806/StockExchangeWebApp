@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 230px;
+    background: #1e293b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.section-title {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.accounts div {
+    font-size: 14px;
+}
+
+.backend-url {
+    font-size: 12px;
+    background: #0f172a;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.main {
+    flex: 1;
+    padding: 25px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #334155;
+}
+
+.card-title {
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    color: #e2e8f0;
+    margin-bottom: 12px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buy {
+    background: #22c55e;
+    color: #022c22;
+}
+
+.sell {
+    background: #f97316;
+    color: #331100;
+}
+
+.neutral {
+    background: #334155;
+    color: #e2e8f0;
+}
+
+.output-box {
+    background: #0f172a;
+    border: 1px solid #334155;
+    padding: 14px;
+    border-radius: 6px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.chart-box {
+    background: #111827;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #1f2937;
+    height: 150px;
+}
+
+.chart-box canvas {
+    width: 100% !important;
+    height: 100% !important;
+}

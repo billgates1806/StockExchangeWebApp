@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Stock Exchange Simulator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+    <aside class="sidebar">
+        <div class="logo">StockSim</div>
+
+        <div class="section-title">Accounts</div>
+        <div class="accounts">
+            <div>ID 0 – Rohan</div>
+            <div>ID 1 – Neal</div>
+            <div>ID 2 – Swastik</div>
+        </div>
+
+        <div class="section-title small">Backend</div>
+        <div class="backend-url">http://localhost:8080</div>
+    </aside>
+
+    <main class="main">
+
+        <h1 class="title">Stock Exchange Simulator</h1>
+
+        <div class="card">
+            <div class="card-title">Trade Panel</div>
+
+            <label>Account ID</label>
+            <input id="accId" type="number" placeholder="0">
+
+            <label>Stock Symbol</label>
+            <input id="symbol" type="text" placeholder="AAPL">
+
+            <label>Quantity</label>
+            <input id="qty" type="number" placeholder="10">
+
+            <div class="buttons">
+                <button class="btn buy" onclick="buy()">Buy</button>
+                <button class="btn sell" onclick="sell()">Sell</button>
+                <button class="btn neutral" onclick="portfolio()">Portfolio</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Live Stock Graphs</div>
+
+            <div class="charts-grid">
+                <div class="chart-box"><canvas id="chartAAPL"></canvas></div>
+                <div class="chart-box"><canvas id="chartGOOG"></canvas></div>
+                <div class="chart-box"><canvas id="chartTSLA"></canvas></div>
+                <div class="chart-box"><canvas id="chartMSFT"></canvas></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Portfolio Output</div>
+            <pre id="output" class="output-box">Waiting for input...</pre>
+        </div>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+<script src="charts.js"></script>
+</body>
+</html>
